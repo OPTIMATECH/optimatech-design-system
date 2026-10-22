@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Studio de papelaria · OPTIMATECH Design System</title>
+<meta name="description" content="Gere sua assinatura de e-mail, cartão de visita e cartão QR no padrão da marca OPTIMATECH.">
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/sora-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/sora-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/studio.css">
+</head>
+<body class="studio">
+<div class="shell">
+<aside class="rail"></aside>
+<div>
+<header class="topbar"></header>
+<main id="main">
+
+<!-- ================= ASSINATURA ================= -->
+<section class="page" id="p-assinatura" aria-labelledby="h-sig">
+  <header class="p-head"><div class="wrap">
+    <p class="crumb"><a href="index.html#inicio">Design System</a> / Studio</p>
+    <h1 id="h-sig">Assinatura de <strong>e-mail</strong></h1>
+    <p class="lead">Quatro modelos do Manual v3, prontos para colar no Gmail, Outlook ou Apple Mail. O texto continua selecionável e os links clicáveis.</p>
+  </div></header>
+  <div class="wrap st-tool">
+    <div class="st-side"><form id="formSig"></form></div>
+    <div class="st-main">
+      <div class="st-bar">
+        <div class="seg" id="sigModels" role="group" aria-label="Modelo de assinatura">
+          <button type="button" data-m="classica" aria-pressed="true">Clássica</button>
+          <button type="button" data-m="abas" aria-pressed="false">Duas abas</button>
+          <button type="button" data-m="blocos" aria-pressed="false">Blocos</button>
+          <button type="button" data-m="graphite" aria-pressed="false">Graphite</button>
+        </div>
+      </div>
+      <div class="st-stage st-stage--mail">
+        <div class="st-mail">
+          <div class="st-mail__head"><span></span><span></span><span></span><b>Nova mensagem</b></div>
+          <div class="st-mail__body">
+            <p class="st-mail__line" style="width:62%"></p><p class="st-mail__line" style="width:84%"></p><p class="st-mail__line" style="width:40%"></p>
+            <div class="st-mail__sig" id="sigPreview"></div>
+          </div>
+        </div>
+      </div>
+      <div class="st-export">
+        <div class="st-export__row">
+          <div><h3>Imagens da marca</h3>
+            <div class="seg" id="sigHost" role="group" aria-label="Como incluir as imagens">
+              <button type="button" data-h="hosted" aria-pressed="true">Hospedadas (recomendado)</button>
+              <button type="button" data-h="embed" aria-pressed="false">Embutidas</button>
+            </div>
+            <p class="st-note" id="sigHostNote"></p>
+          </div>
+        </div>
+        <div class="st-actions">
+          <button type="button" class="btn btn--accent" data-x="sig:copy">Copiar assinatura</button>
+          <button type="button" class="btn btn--ghost" data-x="sig:html">Baixar HTML</button>
+          <button type="button" class="btn btn--ghost" data-x="sig:png">Baixar PNG @2x</button>
+        </div>
+      </div>
+      <div class="st-howto">
+        <h2 class="h">Como instalar</h2>
+        <div class="st-tabs" role="tablist" aria-label="Cliente de e-mail">
+          <button role="tab" aria-selected="true" aria-controls="ht-gmail" id="t-gmail">Gmail</button>
+          <button role="tab" aria-selected="false" aria-controls="ht-outlook" id="t-outlook">Outlook</button>
+          <button role="tab" aria-selected="false" aria-controls="ht-apple" id="t-apple">Apple Mail</button>
+        </div>
+        <ol role="tabpanel" id="ht-gmail" aria-labelledby="t-gmail">
+          <li>Clique em <b>Copiar assinatura</b> (com imagens hospedadas).</li>
+          <li>No Gmail, abra <b>Configurações › Ver todas as configurações › Geral</b>.</li>
+          <li>Em <b>Assinatura</b>, crie uma nova, dê o nome “OPTIMATECH” e cole com Ctrl+V (⌘V no Mac).</li>
+          <li>Defina como padrão para novos e-mails e respostas e clique em <b>Salvar alterações</b> no fim da página.</li>
+        </ol>
+        <ol role="tabpanel" id="ht-outlook" aria-labelledby="t-outlook" hidden>
+          <li><b>Outlook na web / novo Outlook:</b> Configurações › Contas › Assinaturas › Nova assinatura. Cole e salve.</li>
+          <li><b>Outlook para Windows clássico:</b> Arquivo › Opções › Email › Assinaturas › Novo. Cole no editor e escolha a assinatura padrão.</li>
+          <li>Se as imagens não aparecerem no Outlook para desktop, troque para <b>Embutidas</b>, copie de novo e cole.</li>
+          <li>Os cantos arredondados viram retos no Outlook clássico. É o comportamento esperado do programa.</li>
+        </ol>
+        <ol role="tabpanel" id="ht-apple" aria-labelledby="t-apple" hidden>
+          <li>Escolha <b>Embutidas</b> e clique em <b>Copiar assinatura</b>.</li>
+          <li>No Mail, abra <b>Ajustes › Assinaturas</b>, selecione a conta e clique em <b>+</b>.</li>
+          <li>Desmarque “Sempre usar minha fonte padrão de mensagens” e cole a assinatura.</li>
+          <li>Feche os ajustes. A assinatura aparece na próxima mensagem.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CARTÃO DE VISITA ================= -->
+<section class="page" id="p-cartao" aria-labelledby="h-card">
+  <header class="p-head"><div class="wrap">
+    <p class="crumb"><a href="index.html#inicio">Design System</a> / Studio</p>
+    <h1 id="h-card">Cartão de <strong>visita</strong></h1>
+    <p class="lead">Formato 90 × 50 mm com sangria de 3 mm. Gere a arte para tela ou o arquivo pronto para gráfica, em CMYK.</p>
+  </div></header>
+  <div class="wrap st-tool">
+    <div class="st-side"><form id="formCard"></form></div>
+    <div class="st-main">
+      <div class="st-bar">
+        <div class="seg" id="cardModels" role="group" aria-label="Modelo do cartão">
+          <button type="button" data-m="graphite" aria-pressed="true">Graphite</button>
+          <button type="button" data-m="branco" aria-pressed="false">Branco essencial</button>
+          <button type="button" data-m="citrus" aria-pressed="false">Citrus</button>
+        </div>
+        <div class="seg" id="cardFaces" role="group" aria-label="Lado do cartão">
+          <button type="button" data-f="frente" aria-pressed="true">Frente</button>
+          <button type="button" data-f="verso" aria-pressed="false">Verso</button>
+        </div>
+      </div>
+      <div class="st-stage st-stage--card">
+        <div class="st-flip" id="cardFlip" tabindex="0" role="button" aria-label="Virar o cartão">
+          <div class="st-flip__in"><div class="st-face st-face--front" id="cardFront"></div><div class="st-face st-face--back" id="cardBack"></div></div>
+        </div>
+        <p class="st-stage__hint">Clique no cartão para virar</p>
+        <label class="st-check st-check--stage"><input type="checkbox" id="cardGuides"> Mostrar sangria e área de segurança</label>
+        <div class="st-legend" aria-hidden="true"><span class="lg-trim">Corte</span><span class="lg-safe">Área de segurança (4 mm)</span><span class="lg-bleed">Sangria (3 mm)</span></div>
+      </div>
+      <div class="st-export">
+        <div class="st-export__grid">
+          <div class="st-out">
+            <h3>Para tela</h3>
+            <p>Imagens a 300 dpi e PDF em RGB, para enviar por mensagem ou imprimir em casa.</p>
+            <label class="st-check"><input type="checkbox" id="cardBleed" checked> Incluir sangria de 3 mm</label>
+            <div class="st-actions">
+              <button type="button" class="btn btn--ghost" data-x="card:png">PNG</button>
+              <button type="button" class="btn btn--ghost" data-x="card:jpg">JPG</button>
+              <button type="button" class="btn btn--ghost" data-x="card:pdf">PDF digital</button>
+            </div>
+          </div>
+          <div class="st-out st-out--print">
+            <h3>Para gráfica</h3>
+            <p>Vetor em CMYK com sangria, marcas de corte e fontes incorporadas. Frente e verso em páginas separadas.</p>
+            <div class="st-actions">
+              <button type="button" class="btn btn--accent" data-x="card:print">PDF para gráfica</button>
+              <button type="button" class="btn btn--ghost" data-x="card:a4">Folha A4 com 10 cartões</button>
+            </div>
+            <p class="st-note">Estruturado conforme PDF/X-1a:2001 (CMYK, FOGRA39, fontes incorporadas, sem transparência). Peça à gráfica o preflight final.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CARTÃO QR ================= -->
+<section class="page" id="p-qr" aria-labelledby="h-qr">
+  <header class="p-head"><div class="wrap">
+    <p class="crumb"><a href="index.html#inicio">Design System</a> / Studio</p>
+    <h1 id="h-qr">Cartão <strong>QR</strong></h1>
+    <p class="lead">Um QR que salva o seu contato direto na agenda do celular. Use impresso no cartão ou no crachá, ou como imagem no WhatsApp e nas redes.</p>
+  </div></header>
+  <div class="wrap st-tool">
+    <div class="st-side"><form id="formQR"></form></div>
+    <div class="st-main">
+      <div class="st-bar">
+        <div class="seg" id="qrLayouts" role="group" aria-label="Formato">
+          <button type="button" data-l="cartao" aria-pressed="true">Cartão 90 × 50</button>
+          <button type="button" data-l="cracha" aria-pressed="false">Crachá 54 × 86</button>
+          <button type="button" data-l="social" aria-pressed="false">Post 1080²</button>
+          <button type="button" data-l="celular" aria-pressed="false">Celular 1080 × 1920</button>
+        </div>
+      </div>
+      <div class="st-bar st-bar--sub">
+        <span class="st-bar__label" id="lbl-qrc">O QR abre</span>
+        <div class="seg" id="qrContents" role="group" aria-labelledby="lbl-qrc">
+          <button type="button" data-c="vcard" aria-pressed="true">Meu contato</button>
+          <button type="button" data-c="site" aria-pressed="false">Site</button>
+          <button type="button" data-c="linkedin" aria-pressed="false">LinkedIn</button>
+        </div>
+        <label class="st-check"><input type="checkbox" id="qrLogo" checked> Símbolo no centro</label>
+      </div>
+      <div class="st-stage st-stage--qr"><div class="st-qr" id="qrPreview"></div></div>
+      <p class="st-warn" id="qrDensity" role="status" hidden></p>
+      <div class="st-export">
+        <div class="st-actions">
+          <button type="button" class="btn btn--accent" data-x="qr:png">Baixar PNG</button>
+          <button type="button" class="btn btn--ghost" data-x="qr:svg">SVG</button>
+          <span id="qrPrint"><button type="button" class="btn btn--ghost" data-x="qr:pdf">PDF para gráfica</button></span>
+          <button type="button" class="btn btn--ghost" data-x="qr:vcf">Contato (.vcf)</button>
+        </div>
+        <p class="st-note">O QR usa correção de erro reforçada (nível Q) quando o símbolo está no centro e mantém a margem de 4 módulos exigida pelos leitores. Teste com a câmera antes de imprimir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="foot"><div class="wrap"><span>OPTIMATECH Design System v7 · Studio</span><span>Arquivos gerados no seu navegador. Nenhum dado é enviado.</span></div></footer>
+</div>
+</div>
+<script src="assets/js/brand.js"></script>
+<script src="assets/js/shell.js"></script>
+<script src="assets/js/studio.js"></script>
+</body>
+</html>

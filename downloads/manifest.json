@@ -1,0 +1,132 @@
+{
+ "version": "7.0",
+ "packs": [
+  {
+   "id": "logos",
+   "title": "Logotipos",
+   "desc": "Todas as versões oficiais do logotipo, símbolo, app icon e favicons, em vetor e PNG.",
+   "file": "downloads/optimatech-logos.zip",
+   "size": 4071097,
+   "formats": [
+    "SVG",
+    "PNG",
+    "PDF",
+    "ICO"
+   ],
+   "group": "marca"
+  },
+  {
+   "id": "icones",
+   "title": "Iconografia",
+   "desc": "Os 118 ícones oficiais do manual v3 em Graphite, branco e currentColor, com PNGs.",
+   "file": "downloads/optimatech-icones.zip",
+   "size": 1817678,
+   "formats": [
+    "SVG",
+    "PNG",
+    "CSV"
+   ],
+   "group": "marca"
+  },
+  {
+   "id": "fontes",
+   "title": "Fontes Exo e Sora",
+   "desc": "Tipografias da marca para instalar no computador e para usar na web.",
+   "file": "downloads/optimatech-fontes.zip",
+   "size": 1184379,
+   "formats": [
+    "TTF",
+    "WOFF2"
+   ],
+   "group": "marca"
+  },
+  {
+   "id": "cores",
+   "title": "Paleta de cores",
+   "desc": "Paleta oficial para Adobe, Figma, CSS, Tailwind e GIMP, com ficha de referência.",
+   "file": "downloads/optimatech-cores.zip",
+   "size": 273500,
+   "formats": [
+    "ASE",
+    "CSS",
+    "SCSS",
+    "JSON",
+    "GPL",
+    "PDF",
+    "PNG"
+   ],
+   "group": "sistema"
+  },
+  {
+   "id": "texturas",
+   "title": "Texturas e elementos gráficos",
+   "desc": "Padrões, trilhas, blocos e gradiente derivados do símbolo, em 16:9 e 1:1.",
+   "file": "downloads/optimatech-texturas.zip",
+   "size": 5430784,
+   "formats": [
+    "SVG",
+    "PNG"
+   ],
+   "group": "sistema"
+  },
+  {
+   "id": "papelaria",
+   "title": "Papel timbrado",
+   "desc": "Os três timbrados A4 em Word, modelo do Word e PDF.",
+   "file": "downloads/optimatech-papelaria.zip",
+   "size": 527696,
+   "formats": [
+    "DOCX",
+    "DOTX",
+    "PDF"
+   ],
+   "group": "papelaria"
+  },
+  {
+   "id": "design-system-completo",
+   "title": "Pacote completo",
+   "desc": "Todos os pacotes acima em um único arquivo.",
+   "file": "downloads/optimatech-design-system-completo.zip",
+   "size": 13342071,
+   "formats": [
+    "ZIP"
+   ],
+   "group": "sistema"
+  }
+ ],
+ "timbrados": [
+  {
+   "id": "minimal",
+   "title": "Minimal",
+   "desc": "Discreto e formal: logotipo Graphite pequeno e rodapé em linha fina, para correspondência corporativa.",
+   "preview": "assets/img/papelaria/timbrado-minimal.jpg",
+   "previewVazio": "assets/img/papelaria/timbrado-minimal-vazio.png",
+   "docx": "downloads/papelaria/OPTIMATECH_Timbrado_Minimal.docx",
+   "dotx": "downloads/papelaria/OPTIMATECH_Timbrado_Minimal.dotx",
+   "pdf": "downloads/papelaria/OPTIMATECH_Timbrado_Minimal.pdf",
+   "pdfExemplo": "downloads/papelaria/OPTIMATECH_Timbrado_Minimal_exemplo.pdf"
+  },
+  {
+   "id": "institucional",
+   "title": "Institucional",
+   "desc": "Trilha do símbolo em contorno e faixa Citrus + Graphite no rodapé, para propostas e comunicados.",
+   "preview": "assets/img/papelaria/timbrado-institucional.jpg",
+   "previewVazio": "assets/img/papelaria/timbrado-institucional-vazio.png",
+   "docx": "downloads/papelaria/OPTIMATECH_Timbrado_Institucional.docx",
+   "dotx": "downloads/papelaria/OPTIMATECH_Timbrado_Institucional.dotx",
+   "pdf": "downloads/papelaria/OPTIMATECH_Timbrado_Institucional.pdf",
+   "pdfExemplo": "downloads/papelaria/OPTIMATECH_Timbrado_Institucional_exemplo.pdf"
+  },
+  {
+   "id": "estilizado",
+   "title": "Estilizado",
+   "desc": "Supergráfico com o símbolo em Citrus, Olive e Graphite na base, para peças de relacionamento e marketing.",
+   "preview": "assets/img/papelaria/timbrado-estilizado.jpg",
+   "previewVazio": "assets/img/papelaria/timbrado-estilizado-vazio.png",
+   "docx": "downloads/papelaria/OPTIMATECH_Timbrado_Estilizado.docx",
+   "dotx": "downloads/papelaria/OPTIMATECH_Timbrado_Estilizado.dotx",
+   "pdf": "downloads/papelaria/OPTIMATECH_Timbrado_Estilizado.pdf",
+   "pdfExemplo": "downloads/papelaria/OPTIMATECH_Timbrado_Estilizado_exemplo.pdf"
+  }
+ ]
+}
