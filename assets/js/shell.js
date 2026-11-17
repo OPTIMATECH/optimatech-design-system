@@ -1,7 +1,7 @@
 /* OPTIMATECH DS v7 · shell compartilhado (menu lateral, busca, toast, copiar) */
 (function(){
 'use strict';
-const VERSION='7.0';
+const VERSION='7.1';
 const NAV=[
   {group:'Fundamentos',items:[
     ['inicio','Visão geral'],['marca','A marca'],['logotipo','Logotipo'],['cores','Cores'],['tipografia','Tipografia'],['grid','Grid e espaço']]},
@@ -10,12 +10,12 @@ const NAV=[
   {group:'Sistema',items:[
     ['componentes','Componentes'],['tokens','Tokens'],['aplicacoes','Aplicações']]},
   {group:'Papelaria',items:[
-    ['studio:assinatura','Assinatura de e-mail','Studio'],['studio:cartao','Cartão de visita','Studio'],['studio:qr','Cartão QR','Studio'],['papelaria','Papel timbrado'],['downloads','Downloads']]}
+    ['studio:assinatura','Assinatura de e-mail','Studio'],['studio:cartao','Cartão de visita','Studio'],['studio:qr','Cartão QR','Studio'],['papelaria','Papel timbrado'],['fundos','Fundos e capas','Novo'],['downloads','Downloads']]}
 ];
 const SEARCH_EXTRA={ /* termos extras para a busca */
   cores:'paleta citrus graphite cmyk pantone hex rgb contraste',tipografia:'exo sora fonte escala fibonacci',logotipo:'logo símbolo assinatura área de proteção favicon',
   iconografia:'ícones icones svg',elementos:'texturas padrões pattern supergráfico trilha linhas gradiente',downloads:'baixar zip pacote',
-  'studio:assinatura':'email outlook gmail','studio:cartao':'cartão de visita impressão gráfica pdf x-1a','studio:qr':'qrcode vcard','papelaria':'word docx timbrado carta'
+  'studio:assinatura':'email outlook gmail','studio:cartao':'cartão de visita impressão gráfica pdf x-1a','studio:qr':'qrcode vcard','papelaria':'word docx timbrado carta','fundos':'fundo de tela wallpaper papel de parede zoom teams meet reunião linkedin capa banner celular desktop'
 };
 const isStudio=/studio\.html$/.test(location.pathname);
 function href(id){ if(id.startsWith('studio:')) return (isStudio?'':'studio.html')+'#'+id.split(':')[1]; return (isStudio?'index.html':'')+'#'+id; }

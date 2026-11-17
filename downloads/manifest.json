@@ -1,12 +1,12 @@
 {
- "version": "7.0",
+ "version": "7.1",
  "packs": [
   {
    "id": "logos",
    "title": "Logotipos",
-   "desc": "Todas as versões oficiais do logotipo, símbolo, app icon e favicons, em vetor e PNG.",
+   "desc": "Todas as versões oficiais do logotipo, símbolo, app icon e favicons, em vetor e PNG. Símbolo com a geometria corrigida da v7.1.",
    "file": "downloads/optimatech-logos.zip",
-   "size": 4071097,
+   "size": 4169311,
    "formats": [
     "SVG",
     "PNG",
@@ -62,7 +62,7 @@
    "title": "Texturas e elementos gráficos",
    "desc": "Padrões, trilhas, blocos e gradiente derivados do símbolo, em 16:9 e 1:1.",
    "file": "downloads/optimatech-texturas.zip",
-   "size": 5430784,
+   "size": 3095550,
    "formats": [
     "SVG",
     "PNG"
@@ -83,11 +83,33 @@
    "group": "papelaria"
   },
   {
+   "id": "linkedin",
+   "title": "Capas de LinkedIn",
+   "desc": "Quatro capas para o perfil de quem trabalha na OPTIMATECH e duas para a página da empresa.",
+   "file": "downloads/optimatech-linkedin-capas.zip",
+   "formats": [
+    "JPG"
+   ],
+   "group": "papelaria",
+   "size": 1049397
+  },
+  {
+   "id": "fundos",
+   "title": "Fundos de tela e de reunião",
+   "desc": "Papéis de parede 4K, fundos virtuais para Zoom, Teams e Meet e telas para celular.",
+   "file": "downloads/optimatech-fundos-de-tela.zip",
+   "formats": [
+    "JPG"
+   ],
+   "group": "papelaria",
+   "size": 6153837
+  },
+  {
    "id": "design-system-completo",
    "title": "Pacote completo",
    "desc": "Todos os pacotes acima em um único arquivo.",
    "file": "downloads/optimatech-design-system-completo.zip",
-   "size": 13342071,
+   "size": 18305166,
    "formats": [
     "ZIP"
    ],
@@ -127,6 +149,298 @@
    "dotx": "downloads/papelaria/OPTIMATECH_Timbrado_Estilizado.dotx",
    "pdf": "downloads/papelaria/OPTIMATECH_Timbrado_Estilizado.pdf",
    "pdfExemplo": "downloads/papelaria/OPTIMATECH_Timbrado_Estilizado_exemplo.pdf"
+  }
+ ],
+ "fundos": [
+  {
+   "format": "desktop",
+   "design": "supergrafico",
+   "title": "Supergráfico Citrus",
+   "file": "downloads/fundos/desktop/optimatech-fundo-desktop-supergrafico-3840x2160.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-desktop-supergrafico-3840x2160.jpg",
+   "w": 3840,
+   "h": 2160,
+   "size": 324884
+  },
+  {
+   "format": "desktop",
+   "design": "trilhas",
+   "title": "Trilhas",
+   "file": "downloads/fundos/desktop/optimatech-fundo-desktop-trilhas-3840x2160.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-desktop-trilhas-3840x2160.jpg",
+   "w": 3840,
+   "h": 2160,
+   "size": 474782
+  },
+  {
+   "format": "desktop",
+   "design": "gradiente",
+   "title": "Gradiente quente",
+   "file": "downloads/fundos/desktop/optimatech-fundo-desktop-gradiente-3840x2160.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-desktop-gradiente-3840x2160.jpg",
+   "w": 3840,
+   "h": 2160,
+   "size": 935362
+  },
+  {
+   "format": "desktop",
+   "design": "areia",
+   "title": "Areia",
+   "file": "downloads/fundos/desktop/optimatech-fundo-desktop-areia-3840x2160.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-desktop-areia-3840x2160.jpg",
+   "w": 3840,
+   "h": 2160,
+   "size": 359068
+  },
+  {
+   "format": "desktop",
+   "design": "gelo",
+   "title": "Gelo e blocos",
+   "file": "downloads/fundos/desktop/optimatech-fundo-desktop-gelo-3840x2160.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-desktop-gelo-3840x2160.jpg",
+   "w": 3840,
+   "h": 2160,
+   "size": 194142
+  },
+  {
+   "format": "desktop",
+   "design": "nos",
+   "title": "Nós laranja",
+   "file": "downloads/fundos/desktop/optimatech-fundo-desktop-nos-3840x2160.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-desktop-nos-3840x2160.jpg",
+   "w": 3840,
+   "h": 2160,
+   "size": 143079
+  },
+  {
+   "format": "desktop",
+   "design": "padrao",
+   "title": "Padrão de símbolos",
+   "file": "downloads/fundos/desktop/optimatech-fundo-desktop-padrao-3840x2160.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-desktop-padrao-3840x2160.jpg",
+   "w": 3840,
+   "h": 2160,
+   "size": 445804
+  },
+  {
+   "format": "desktop",
+   "design": "citrus",
+   "title": "Citrus pleno",
+   "file": "downloads/fundos/desktop/optimatech-fundo-desktop-citrus-3840x2160.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-desktop-citrus-3840x2160.jpg",
+   "w": 3840,
+   "h": 2160,
+   "size": 184303
+  },
+  {
+   "format": "reuniao",
+   "design": "supergrafico",
+   "title": "Supergráfico Citrus",
+   "file": "downloads/fundos/reuniao/optimatech-fundo-reuniao-supergrafico-1920x1080.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-reuniao-supergrafico-1920x1080.jpg",
+   "w": 1920,
+   "h": 1080,
+   "size": 88065
+  },
+  {
+   "format": "reuniao",
+   "design": "trilhas",
+   "title": "Trilhas",
+   "file": "downloads/fundos/reuniao/optimatech-fundo-reuniao-trilhas-1920x1080.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-reuniao-trilhas-1920x1080.jpg",
+   "w": 1920,
+   "h": 1080,
+   "size": 147047
+  },
+  {
+   "format": "reuniao",
+   "design": "gradiente",
+   "title": "Gradiente quente",
+   "file": "downloads/fundos/reuniao/optimatech-fundo-reuniao-gradiente-1920x1080.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-reuniao-gradiente-1920x1080.jpg",
+   "w": 1920,
+   "h": 1080,
+   "size": 255423
+  },
+  {
+   "format": "reuniao",
+   "design": "areia",
+   "title": "Areia",
+   "file": "downloads/fundos/reuniao/optimatech-fundo-reuniao-areia-1920x1080.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-reuniao-areia-1920x1080.jpg",
+   "w": 1920,
+   "h": 1080,
+   "size": 114660
+  },
+  {
+   "format": "reuniao",
+   "design": "gelo",
+   "title": "Gelo e blocos",
+   "file": "downloads/fundos/reuniao/optimatech-fundo-reuniao-gelo-1920x1080.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-reuniao-gelo-1920x1080.jpg",
+   "w": 1920,
+   "h": 1080,
+   "size": 56411
+  },
+  {
+   "format": "reuniao",
+   "design": "padrao",
+   "title": "Padrão de símbolos",
+   "file": "downloads/fundos/reuniao/optimatech-fundo-reuniao-padrao-1920x1080.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-reuniao-padrao-1920x1080.jpg",
+   "w": 1920,
+   "h": 1080,
+   "size": 178837
+  },
+  {
+   "format": "celular",
+   "design": "supergrafico",
+   "title": "Supergráfico Citrus",
+   "file": "downloads/fundos/celular/optimatech-fundo-celular-supergrafico-1290x2796.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-celular-supergrafico-1290x2796.jpg",
+   "w": 1290,
+   "h": 2796,
+   "size": 145554
+  },
+  {
+   "format": "celular",
+   "design": "trilhas",
+   "title": "Trilhas",
+   "file": "downloads/fundos/celular/optimatech-fundo-celular-trilhas-1290x2796.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-celular-trilhas-1290x2796.jpg",
+   "w": 1290,
+   "h": 2796,
+   "size": 216133
+  },
+  {
+   "format": "celular",
+   "design": "gradiente",
+   "title": "Gradiente quente",
+   "file": "downloads/fundos/celular/optimatech-fundo-celular-gradiente-1290x2796.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-celular-gradiente-1290x2796.jpg",
+   "w": 1290,
+   "h": 2796,
+   "size": 407881
+  },
+  {
+   "format": "celular",
+   "design": "nos",
+   "title": "Nós laranja",
+   "file": "downloads/fundos/celular/optimatech-fundo-celular-nos-1290x2796.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-celular-nos-1290x2796.jpg",
+   "w": 1290,
+   "h": 2796,
+   "size": 76771
+  },
+  {
+   "format": "linkedin-colaborador",
+   "design": "supergrafico",
+   "title": "Supergráfico Citrus",
+   "file": "downloads/fundos/linkedin/optimatech-linkedin-colaborador-01-supergrafico-3168x792.jpg",
+   "preview": "assets/img/fundos/optimatech-linkedin-colaborador-01-supergrafico-3168x792.jpg",
+   "w": 3168,
+   "h": 792,
+   "size": 112287
+  },
+  {
+   "format": "linkedin-colaborador",
+   "design": "trilhas",
+   "title": "Trilhas",
+   "file": "downloads/fundos/linkedin/optimatech-linkedin-colaborador-02-trilhas-3168x792.jpg",
+   "preview": "assets/img/fundos/optimatech-linkedin-colaborador-02-trilhas-3168x792.jpg",
+   "w": 3168,
+   "h": 792,
+   "size": 138331
+  },
+  {
+   "format": "linkedin-colaborador",
+   "design": "gradiente",
+   "title": "Gradiente quente",
+   "file": "downloads/fundos/linkedin/optimatech-linkedin-colaborador-03-gradiente-3168x792.jpg",
+   "preview": "assets/img/fundos/optimatech-linkedin-colaborador-03-gradiente-3168x792.jpg",
+   "w": 3168,
+   "h": 792,
+   "size": 347502
+  },
+  {
+   "format": "linkedin-colaborador",
+   "design": "gelo",
+   "title": "Gelo e blocos",
+   "file": "downloads/fundos/linkedin/optimatech-linkedin-colaborador-04-gelo-3168x792.jpg",
+   "preview": "assets/img/fundos/optimatech-linkedin-colaborador-04-gelo-3168x792.jpg",
+   "w": 3168,
+   "h": 792,
+   "size": 79940
+  },
+  {
+   "format": "linkedin-empresa",
+   "design": "supergrafico",
+   "title": "Supergráfico Citrus",
+   "file": "downloads/fundos/linkedin/optimatech-linkedin-empresa-01-supergrafico-4200x700.jpg",
+   "preview": "assets/img/fundos/optimatech-linkedin-empresa-01-supergrafico-4200x700.jpg",
+   "w": 4200,
+   "h": 700,
+   "size": 110725
+  },
+  {
+   "format": "linkedin-empresa",
+   "design": "gradiente",
+   "title": "Gradiente quente",
+   "file": "downloads/fundos/linkedin/optimatech-linkedin-empresa-02-gradiente-4200x700.jpg",
+   "preview": "assets/img/fundos/optimatech-linkedin-empresa-02-gradiente-4200x700.jpg",
+   "w": 4200,
+   "h": 700,
+   "size": 388715
+  },
+  {
+   "format": "reuniao-ambiente",
+   "design": "relevo-simbolo",
+   "title": "Ambiente · relevo simbolo",
+   "file": "downloads/fundos/reuniao/optimatech-fundo-reuniao-ambiente-01-relevo-simbolo-1920x1080.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-reuniao-ambiente-01-relevo-simbolo-1920x1080.jpg",
+   "w": 1920,
+   "h": 1080,
+   "size": 793626
+  },
+  {
+   "format": "reuniao-ambiente",
+   "design": "relevo-logotipo",
+   "title": "Ambiente · relevo logotipo",
+   "file": "downloads/fundos/reuniao/optimatech-fundo-reuniao-ambiente-02-relevo-logotipo-1920x1080.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-reuniao-ambiente-02-relevo-logotipo-1920x1080.jpg",
+   "w": 1920,
+   "h": 1080,
+   "size": 806165
+  },
+  {
+   "format": "reuniao-ambiente",
+   "design": "fachada",
+   "title": "Ambiente · fachada",
+   "file": "downloads/fundos/reuniao/optimatech-fundo-reuniao-ambiente-03-fachada-1920x1080.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-reuniao-ambiente-03-fachada-1920x1080.jpg",
+   "w": 1920,
+   "h": 1080,
+   "size": 313582
+  },
+  {
+   "format": "reuniao-ambiente",
+   "design": "sala-vidro",
+   "title": "Ambiente · sala vidro",
+   "file": "downloads/fundos/reuniao/optimatech-fundo-reuniao-ambiente-04-sala-vidro-1920x1080.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-reuniao-ambiente-04-sala-vidro-1920x1080.jpg",
+   "w": 1920,
+   "h": 1080,
+   "size": 437025
+  },
+  {
+   "format": "reuniao-ambiente",
+   "design": "sala-citrus",
+   "title": "Ambiente · sala citrus",
+   "file": "downloads/fundos/reuniao/optimatech-fundo-reuniao-ambiente-05-sala-citrus-1920x1080.jpg",
+   "preview": "assets/img/fundos/optimatech-fundo-reuniao-ambiente-05-sala-citrus-1920x1080.jpg",
+   "w": 1920,
+   "h": 1080,
+   "size": 179124
   }
  ]
 }

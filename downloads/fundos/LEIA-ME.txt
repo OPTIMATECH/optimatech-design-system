@@ -1,0 +1,17 @@
+OPTIMATECH · Fundos de tela e capas de LinkedIn (Design System v7.1)
+
+desktop/   Papéis de parede 4K (3840 x 2160). Servem em qualquer monitor 16:9; o sistema ajusta sozinho.
+reuniao/   Fundos virtuais 1920 x 1080 para Zoom, Teams e Google Meet. O logotipo fica no canto superior esquerdo, fora da área do rosto.
+           Os arquivos "ambiente" são as cenas fotográficas da identidade (fachada, sala, relevo).
+celular/   Telas de bloqueio e de início 1290 x 2796 (iPhone e Android atuais).
+linkedin/  Capas de perfil.
+           colaborador: quatro versões para o perfil pessoal de quem trabalha na OPTIMATECH. Exportadas em 3168 x 792 (o dobro de 1584 x 396, medida do LinkedIn) para ficarem nítidas.
+           empresa: capas da página institucional, 4200 x 700.
+
+Como aplicar a capa no LinkedIn: abra o seu perfil, clique no lápis sobre a capa atual, envie o arquivo e confirme sem recortar.
+A foto de perfil cobre o canto inferior esquerdo; por isso o logotipo e a assinatura ficam à direita.
+
+Como usar o fundo no Zoom: Configurações > Plano de fundo e efeitos > "+" > Adicionar imagem. Desmarque "Espelhar meu vídeo" se o logotipo aparecer invertido para você (os outros participantes sempre veem certo).
+Como usar no Teams: Mais > Efeitos de vídeo > Adicionar novo.
+
+Todos os desenhos saem da geometria oficial do símbolo. Não recorte, não estique e não aplique filtros.

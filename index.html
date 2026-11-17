@@ -26,7 +26,7 @@
   <div class="hero">
     <div class="hero__stage" id="heroStage" aria-hidden="true"></div>
     <div class="wrap hero__copy">
-      <p class="hero__kicker">Design System v7 · Manual de Marca v3</p>
+      <p class="hero__kicker">Design System v7.1 · Manual de Marca v3</p>
       <h1>Tempo, pessoas e recursos<br>nos lugares certos.</h1>
       <p class="hero__lead">Tudo o que o time precisa para aplicar a marca OPTIMATECH com precisão: o símbolo, as cores, a tipografia, os componentes e um Studio que gera assinatura, cartão e QR no padrão — prontos para a gráfica.</p>
       <div class="hero__cta">
@@ -66,6 +66,16 @@
           <p>Pacotes oficiais em SVG, PNG e PDF, prontos para uso.</p>
           <span class="start__go">Ir para downloads</span>
         </a>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head"><h2 class="h">Novo na v7.1</h2><p class="intro">Mais insumos para o dia a dia do time e o símbolo com o vetor acertado.</p></div>
+      <div class="changes">
+        <div><b>Símbolo sem emendas.</b><p>O vetor foi reconstruído sobre as medidas do registro: cantos circulares exatos e concordâncias tangentes aos nós. As quinas e as linhas finas que apareciam no contorno e na construção sumiram. <a href="#logotipo/construcao">Ver a construção</a>.</p></div>
+        <div><b>Capas de LinkedIn para o time.</b><p>Quatro capas para o perfil pessoal de quem trabalha na OPTIMATECH, além das capas da página da empresa. <a href="#fundos">Escolher a minha</a>.</p></div>
+        <div><b>Fundos de tela e de reunião.</b><p>Papéis de parede 4K, fundos para Zoom, Teams e Meet e telas para celular, todos derivados do símbolo. <a href="#fundos/reuniao">Ver os fundos</a>.</p></div>
+        <div><b>Assinatura de e-mail em um minuto.</b><p>Preencha nome, cargo e contatos no Studio e copie a assinatura pronta para Gmail ou Outlook. <a href="studio.html#assinatura">Criar a minha</a>.</p></div>
       </div>
     </div>
 
@@ -159,6 +169,7 @@
       <h2 class="h">Construção</h2>
       <p class="intro">O módulo <b>u</b> é o lado do menor nó. O símbolo mede 8u de largura; os demais nós crescem em progressão até o maior, que concentra o peso visual na base. Os nós usam sempre raio de 35% do próprio lado, regra que também gera os raios da interface.</p>
       <div class="build" id="buildArt"></div>
+      <p class="cap">Em laranja, as seis concordâncias que ligam os nós. Cada uma é um quarto de elipse que nasce e termina tangente a um lado reto (os pontos marcam as doze tangências), por isso o contorno corre sem quinas. A geometria é gerada por <code>tools/build-geometry.mjs</code>; não redesenhe à mão.</p>
     </div>
 
     <div class="sec" id="logotipo-protecao">
@@ -540,6 +551,53 @@
 </section>
 
 <!-- ===================================================== DOWNLOADS -->
+<section class="page" id="p-fundos" data-page="fundos">
+  <header class="p-head"><svg class="p-head__trail" data-trail></svg><div class="wrap">
+    <p class="crumb">Papelaria</p>
+    <h1>Fundos e capas</h1>
+    <p class="lead">A marca na tela de quem faz a OPTIMATECH: capa do LinkedIn, fundo de reunião, papel de parede e celular. Clique em uma imagem para ampliar ou baixe direto.</p>
+  </div></header>
+  <div class="wrap">
+    <div class="sec" id="fundos-linkedin">
+      <div class="sec-head"><h2 class="h">Capas de LinkedIn para o time</h2><p class="intro">Quatro versões para o seu perfil pessoal. Escolha a que combina com você; todas levam o logotipo e a assinatura da marca.</p></div>
+      <div class="bgs bgs--cover" id="bgColab"><p class="cap">Carregando capas…</p></div>
+      <p class="cap">A foto de perfil cobre o canto inferior esquerdo (círculo tracejado na prévia). Por isso logotipo e assinatura ficam à direita. Arquivo em 3168 × 792 px, o dobro da medida do LinkedIn, para manter a nitidez.</p>
+    </div>
+    <div class="sec" id="fundos-empresa">
+      <div class="sec-head"><h2 class="h">Capas da página da empresa</h2><p class="intro">Para a página institucional da OPTIMATECH. Uso do marketing.</p></div>
+      <div class="bgs bgs--cover" id="bgEmp"></div>
+    </div>
+    <div class="sec" id="fundos-reuniao">
+      <div class="sec-head"><h2 class="h">Fundos de reunião</h2><p class="intro">1920 × 1080 px para Zoom, Teams e Google Meet. O logotipo fica no canto superior esquerdo, fora da área do rosto.</p></div>
+      <div class="bgs" id="bgMeet"></div>
+      <h3 class="h" style="margin-top:var(--s-6)">Ambientes</h3>
+      <p class="intro">As cenas fotográficas da identidade, para quando a reunião pede um cenário.</p>
+      <div class="bgs" id="bgAmb"></div>
+    </div>
+    <div class="sec" id="fundos-desktop">
+      <div class="sec-head"><h2 class="h">Papéis de parede</h2><p class="intro">3840 × 2160 px (4K). Servem em qualquer monitor 16:9.</p></div>
+      <div class="bgs" id="bgDesk"></div>
+    </div>
+    <div class="sec" id="fundos-celular">
+      <div class="sec-head"><h2 class="h">Celular</h2><p class="intro">1290 × 2796 px para tela de bloqueio e de início.</p></div>
+      <div class="bgs bgs--phone" id="bgCel"></div>
+    </div>
+    <div class="sec">
+      <h2 class="h">Como aplicar</h2>
+      <div class="grid g3 rules">
+        <div><h3>LinkedIn</h3><p>No seu perfil, clique no lápis sobre a capa atual, envie o arquivo e confirme sem recortar.</p></div>
+        <div><h3>Zoom, Teams e Meet</h3><p>Zoom: Configurações, Plano de fundo e efeitos, botão +. Teams: Mais, Efeitos de vídeo, Adicionar novo. Meet: Aplicar efeitos visuais, Fazer upload. Se o logotipo aparecer invertido para você, desmarque “Espelhar meu vídeo”; os outros veem certo.</p></div>
+        <div><h3>Não altere</h3><p>Não recorte, não estique e não aplique filtros. Precisa de outra medida ou de uma versão com o nome de um evento? Peça ao marketing.</p></div>
+      </div>
+      <div class="studio-cta dark">
+        <div><h3>Tudo de uma vez</h3><p>Os pacotes completos de capas e fundos estão em Downloads.</p></div>
+        <div class="lgen__btns"><a class="btn btn--accent" href="downloads/optimatech-linkedin-capas.zip" download>Capas (.zip)</a><a class="btn btn--ghost" href="downloads/optimatech-fundos-de-tela.zip" download>Fundos (.zip)</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="lightbox" id="lightboxBg" hidden><button aria-label="Fechar">×</button><img alt=""><p></p></div>
+</section>
+
 <section class="page" id="p-downloads" data-page="downloads">
   <header class="p-head"><svg class="p-head__trail" data-trail></svg><div class="wrap">
     <p class="crumb">Papelaria</p>
@@ -549,7 +607,7 @@
   <div class="wrap"><div class="sec"><div class="dl" id="dlList"><p class="cap">Carregando pacotes…</p></div></div></div>
 </section>
 
-<footer class="foot"><div class="wrap"><span>OPTIMATECH · Design System v7 · baseado no Manual de Marca e Identidade Visual v3</span><span>Rua Visconde de Pirajá, 414 · Ipanema · Rio de Janeiro</span></div></footer>
+<footer class="foot"><div class="wrap"><span>OPTIMATECH · Design System v7.1 · baseado no Manual de Marca e Identidade Visual v3</span><span>Rua Visconde de Pirajá, 414 · Ipanema · Rio de Janeiro</span></div></footer>
 </main>
 </div>
 </div>

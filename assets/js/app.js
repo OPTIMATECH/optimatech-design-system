@@ -6,7 +6,7 @@ const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelect
 const NS='http://www.w3.org/2000/svg';
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const SYM=B.SYM, U=B.U;
-const NODE_BOX={a:[31.9,54.99,79.66,102.75],b:[87.02,14.58,120.08,47.65],c:[127.43,55.91,151.31,79.79],d:[157.44,32.7,175.18,50.44]};
+const NODE_BOX={a:[31.9,54.99,79.66,102.75],b:[87.02,14.58,120.08,47.64],c:[127.43,55.91,151.31,79.79],d:[157.45,32.7,175.19,50.44]};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 /* ---------- util: SVG → PNG ---------- */
@@ -127,7 +127,9 @@ function initLogo(){
     '<text x="'+(SYM[0]+4*U)+'" y="'+(SYM[3]+17)+'" text-anchor="middle" fill="#333">8u</text>'+
     Object.entries(NODE_BOX).map(([k,b])=>{const s=b[2]-b[0];return '<text x="'+((b[0]+b[2])/2)+'" y="'+((b[1]+b[3])/2+1.8)+'" text-anchor="middle" fill="#fff" font-size="'+(k==='d'?3.4:5)+'">'+(s/U).toFixed(2).replace('.',',')+'u</text>';}).join('')+
     '</g>';
-  $('#buildArt').innerHTML='<svg viewBox="'+(x0-14)+' '+(y0-22)+' '+(cols*U+30)+' '+(SYM[3]-SYM[1]+44)+'">'+grid+B.symbolMarkup({sym:'#333',bridge:'tint',bridgeOpacity:.45})+ann+'</svg>';
+  $('#buildArt').innerHTML='<svg viewBox="'+(x0-14)+' '+(y0-22)+' '+(cols*U+30)+' '+(SYM[3]-SYM[1]+44)+'">'+grid+B.symbolMarkup({sym:'#333',bridge:'tint',bridgeOpacity:.45})+
+    '<g fill="none" stroke="#E65717" stroke-width=".7" stroke-linecap="round">'+B.GEO.fillets.map(d=>'<path d="'+d+'"/>').join('')+'</g>'+
+    B.GEO.fillets.map(d=>{const n=d.match(/-?[\d.]+/g).map(Number);return [[n[0],n[1]],[n[6],n[7]]].map(p=>'<circle cx="'+p[0]+'" cy="'+p[1]+'" r="1.15" fill="#fff" stroke="#E65717" stroke-width=".55"/>').join('');}).join('')+ann+'</svg>';
 
   // Área de proteção
   const p=2*U, bx=[SYM[0]-p,SYM[1]-p,B.WRD[2]-SYM[0]+2*p,SYM[3]-SYM[1]+2*p];
@@ -435,6 +437,20 @@ async function initPapel(){
       (t.docx?'<a class="btn btn--sm" href="'+t.docx+'" download>Word (.docx)</a>':'')+(t.dotx?'<a class="btn btn--sm btn--ghost" href="'+t.dotx+'" download>Modelo (.dotx)</a>':'')+(t.pdf?'<a class="btn btn--sm btn--ghost" href="'+t.pdf+'" download>PDF</a>':'')+(t.pdfExemplo?'<a class="btn btn--sm btn--ghost" href="'+t.pdfExemplo+'" target="_blank" rel="noopener">Ver exemplo</a>':'')+'</div></div>').join('')||'<p class="cap">Nenhum modelo publicado.</p>';
   }catch(e){ el.innerHTML='<p class="cap">Os modelos aparecem quando o site está publicado (Netlify) ou aberto por um servidor local. Arquivos na pasta <b>downloads/</b>.</p>'; }
 }
+async function initFundos(){
+  const box={colab:$('#bgColab'),emp:$('#bgEmp'),meet:$('#bgMeet'),amb:$('#bgAmb'),desk:$('#bgDesk'),cel:$('#bgCel')};
+  const KEY={'linkedin-colaborador':'colab','linkedin-empresa':'emp','reuniao':'meet','reuniao-ambiente':'amb','desktop':'desk','celular':'cel'};
+  try{ const m=await manifest(); const out={colab:'',emp:'',meet:'',amb:'',desk:'',cel:''};
+    (m.fundos||[]).forEach(f=>{ const k=KEY[f.format]; if(!k) return; const cover=k==='colab'||k==='emp';
+      const dim=k==='colab'?'1584 × 396 (2x)':f.w+' × '+f.h;
+      out[k]+='<figure class="bg"><button class="bg__img" data-src="'+f.preview+'" data-cap="'+esc(f.title)+' · '+dim+' px" style="aspect-ratio:'+f.w+'/'+f.h+'"><img loading="lazy" src="'+f.preview+'" alt="'+esc(f.title)+'">'+(cover?'<span class="bg__avatar" aria-hidden="true"></span>':'')+'</button>'+
+        '<figcaption><div><b>'+esc(f.title)+'</b><span>'+dim+' px · '+fmtSize(f.size)+'</span></div><a class="btn btn--sm" href="'+f.file+'" download>Baixar</a></figcaption></figure>'; });
+    Object.keys(box).forEach(k=>{ if(box[k]) box[k].innerHTML=out[k]||'<p class="cap">Nenhum arquivo publicado.</p>'; });
+    const lb=$('#lightboxBg'); const close=()=>lb.hidden=true;
+    $('#p-fundos').addEventListener('click',e=>{ const b=e.target.closest('.bg__img'); if(!b) return; $('img',lb).src=b.dataset.src; $('p',lb).textContent=b.dataset.cap; lb.hidden=false; $('button',lb).focus(); });
+    $('button',lb).onclick=e=>{e.stopPropagation();close();}; lb.onclick=e=>{ if(e.target===lb) close(); }; document.addEventListener('keydown',e=>{ if(e.key==='Escape') close(); });
+  }catch(e){ Object.values(box).forEach(el=>{ if(el) el.innerHTML=''; }); box.colab.innerHTML='<p class="cap">As imagens aparecem quando o site está publicado (Netlify) ou aberto por um servidor local. Arquivos na pasta <b>downloads/fundos/</b>.</p>'; }
+}
 async function initDl(){
   const el=$('#dlList'); const ICO={marca:'cubo-3d',papelaria:'documentos',sistema:'modulos-blocos'};
   try{ const m=await manifest(); const L=(m.packs||m.files||m.items||(Array.isArray(m)?m:[]));
@@ -443,6 +459,6 @@ async function initDl(){
   }catch(e){ el.innerHTML='<p class="cap">A lista de pacotes aparece quando o site está publicado (Netlify) ou aberto por um servidor local. Arquivos na pasta <b>downloads/</b>.</p>'; }
 }
 
-const INIT={inicio:initHero,marca:initMarca,logotipo:initLogo,cores:initCores,tipografia:initTipo,grid:initGrid,elementos:initTex,iconografia:initIcons,fotografia:initFoto,movimento:initMov,voz:initVoz,componentes:initComp,tokens:initTokens,aplicacoes:initApps,papelaria:initPapel,downloads:initDl};
+const INIT={inicio:initHero,marca:initMarca,logotipo:initLogo,cores:initCores,tipografia:initTipo,grid:initGrid,elementos:initTex,iconografia:initIcons,fotografia:initFoto,movimento:initMov,voz:initVoz,componentes:initComp,tokens:initTokens,aplicacoes:initApps,papelaria:initPapel,fundos:initFundos,downloads:initDl};
 route();
 })();
