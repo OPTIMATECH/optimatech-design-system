@@ -69,7 +69,7 @@ const FIELDS=[
   ['nome','Nome completo','text','Como deve aparecer no material',true],
   ['cargo','Cargo','text','',true],
   ['area','Área ou departamento','text','Opcional',false],
-  ['tel','Telefone','tel','Com DDI e DDD: +55 21 99999-9999',true],
+  ['tel','Telefone','tel','Opcional · com DDI e DDD: +55 21 99999-9999',false],
   ['cel','Celular','tel','Opcional',false],
   ['email','E-mail','email','',true],
   ['linkedin','LinkedIn','url','Opcional · ex.: linkedin.com/in/seunome',false],
@@ -82,7 +82,6 @@ function validate(k,v){
   if(k==='cargo'&&!v) return 'Informe o cargo.';
   if(k==='email'){ if(!v) return 'Informe o e-mail.'; if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) return 'Confira o e-mail: falta “@” ou o domínio.'; if(!/@optimatech\.com\.br$/i.test(v)) return 'Dica: use o e-mail corporativo @optimatech.com.br.'; }
   if((k==='tel'||k==='cel')&&v){ const d=v.replace(/\D/g,''); if(d.length<10||d.length>13) return 'O número parece incompleto. Formato: +55 21 99999-9999.'; }
-  if(k==='tel'&&!v) return 'Informe um telefone de contato.';
   return '';
 }
 function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}

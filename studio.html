@@ -24,7 +24,7 @@
   <header class="p-head"><div class="wrap">
     <p class="crumb"><a href="index.html#inicio">Design System</a> / Studio</p>
     <h1 id="h-sig">Assinatura de <strong>e-mail</strong></h1>
-    <p class="lead">Quatro modelos do Manual v3, prontos para colar no Gmail, Outlook ou Apple Mail. O texto continua selecionável e os links clicáveis.</p>
+    <p class="lead">Quatro modelos do Manual v3, prontos para colar no Gmail, Outlook, Apple Mail ou no webmail (Roundcube). O texto continua selecionável e os links clicáveis.</p>
   </div></header>
   <div class="wrap st-tool">
     <div class="st-side"><form id="formSig"></form></div>
@@ -68,6 +68,7 @@
           <button role="tab" aria-selected="true" aria-controls="ht-gmail" id="t-gmail">Gmail</button>
           <button role="tab" aria-selected="false" aria-controls="ht-outlook" id="t-outlook">Outlook</button>
           <button role="tab" aria-selected="false" aria-controls="ht-apple" id="t-apple">Apple Mail</button>
+          <button role="tab" aria-selected="false" aria-controls="ht-roundcube" id="t-roundcube">Roundcube (webmail)</button>
         </div>
         <ol role="tabpanel" id="ht-gmail" aria-labelledby="t-gmail">
           <li>Clique em <b>Copiar assinatura</b> (com imagens hospedadas).</li>
@@ -86,6 +87,13 @@
           <li>No Mail, abra <b>Ajustes › Assinaturas</b>, selecione a conta e clique em <b>+</b>.</li>
           <li>Desmarque “Sempre usar minha fonte padrão de mensagens” e cole a assinatura.</li>
           <li>Feche os ajustes. A assinatura aparece na próxima mensagem.</li>
+        </ol>
+        <ol role="tabpanel" id="ht-roundcube" aria-labelledby="t-roundcube" hidden>
+          <li>Clique em <b>Copiar assinatura</b> (com imagens hospedadas).</li>
+          <li>No Roundcube, acesse <b>Configurações › Identidades</b> e clique sobre o seu e-mail.</li>
+          <li>No campo <b>Assinatura</b>, ative o modo HTML (ícone de imagem logo abaixo do campo) e cole o conteúdo com Ctrl+V (⌘V no Mac).</li>
+          <li>Clique em <b>Salvar</b>.</li>
+          <li>Em <b>Configurações › Preferências › Redigir mensagens</b>, deixe <b>Criar mensagens em HTML</b> como “sempre”. Sem isso, a assinatura sai como texto simples.</li>
         </ol>
       </div>
     </div>
